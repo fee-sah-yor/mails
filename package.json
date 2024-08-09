@@ -1,0 +1,16 @@
+{
+  "name": "mails",
+  "version": "1.0.0",
+  "description": "",
+
+  "scripts": {
+    "dev": "email dev --dir=./emails"
+  },
+
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@react-email/components": "0.0.22",
+    "react-email": "2.1.6"
+  }
+}
