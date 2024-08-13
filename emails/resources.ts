@@ -5,7 +5,7 @@ export const resources = {
   linkdinLogo: '/images/linkedin.png',
   instagramLogo: '/images/instagram.png',
   basePath: '/view/resources',
-  base: 'https://j9jdvz85-4000.euw.devtunnels.ms',
+  base: 'https://staging.api.shuttrd.com',
   live: 'https://www.slack.com',
   headerFont: '/fonts/Montserrat-Bold.woff2',
   bodyFont: '/fonts/lato-Regular.woff2',
