@@ -22,14 +22,11 @@ interface EmailProps {
     validationCode?: string;
     code?: string;
     hostUrl?: string;
-    avater: string;
     visa: string;
 }
 
 export const VerifyEmail = ({
-    validationCode,
     hostUrl,
-    avater,
     visa
 }: EmailProps) => (
     <Tailwind
@@ -83,24 +80,25 @@ export const VerifyEmail = ({
                 />
             </Head>
 
-            <Preview>Payout Successful</Preview>
+            <Preview>Subscription successful</Preview>
 
             <Body className="font-lato">
                 <Container>
                     <Header hostUrl={hostUrl} />
 
-                    <Section className="px-5">
+                    <Section className="px-[20px] pt-[10px] pb-[20px]">
 
                         <Section>
-                            <Heading className="font-montserrat text-[24px] leading-[30px] "> A payout of 1,100 AED has been sent to your account
+                            <Heading className="font-montserrat text-[24px] leading-[30px] text-black">Subscription successful
                             </Heading>
                         </Section>
 
 
                         <Section>
                             <Text className="font-lato text-[16px] text-[#4b5563] leading-[23.8px]">
-                                <span className="text-[#000] font-lato">Dear Cynthia,</span><br />
-                                We are pleased  to inform you that a payout of 1,100 AED has been successfully sent to your account.
+                                <span className="text-[#000] font-lato text-[16px]">Dear Cynthia,</span><br />
+                                Congratulations! Your subscription to Shuttrd monthly
+                                services has been successfully processed.
                             </Text>
                         </Section>
 
@@ -150,7 +148,6 @@ export const VerifyEmail = ({
 
                         <Hr className="border-t-[#4b5563]" />
 
-
                         <Section>
                             <Row>
                                 <Column>
@@ -159,8 +156,10 @@ export const VerifyEmail = ({
                                     </Row>
                                     <Row >
                                         <Column className="w-[70px]">
-                                            <Text className="font-lato mt-0 mb-1 text-sm text-[#4b5563] text-left">Payout for Space Rental <br />
-                                                <span className="font-lato mt-0 mb-1 text-sm text-[#000] text-left font-bold">Booking ID: <span className="underline font-bold">GH123498IO</span></span></Text>
+                                            <Text className="font-lato mt-0 mb-1 text-sm text-[#4b5563] text-left">
+                                                Shuttrd monthly premium services March 24
+                                                - April 24, 2024
+                                            </Text>
                                         </Column>
                                     </Row>
                                 </Column>
@@ -221,7 +220,6 @@ export const VerifyEmail = ({
 
 VerifyEmail.PreviewProps = {
     validationCode: "DJZ-TLX",
-    avater: 'https://staging.api.shuttrd.com/view/resources/img/Avatar.png',
     visa: 'https://staging.api.shuttrd.com/view/resources/img/visa.png'
 } as EmailProps;
 

@@ -9,7 +9,7 @@ export const Header = ({
 
   return <Section className="bg-black p-5 ">
     <Img
-      className="h-6"
+      className="h-4"
       src={`${baseUrl}${resources.logo}`}
       alt="Shuttrd"
     />

@@ -19,7 +19,7 @@ export const Footer = ({
     <Row>
       <Column style={{ width: "66%" }}>
         <Img
-          className="h-6"
+          className="h-4"
           src={`${baseUrl}${resources.logo}`}
           alt="Shuttrd"
         />
@@ -30,7 +30,7 @@ export const Footer = ({
             <Column>
               <Link href="/">
                 <Img
-                  className="bg-white h-6 w-6 rounded p-1"
+                  className="bg-white h-3 w-3 rounded p-1"
                   src={`${baseUrl}${resources.facebookLogo}`}
                 />
               </Link>
@@ -39,7 +39,7 @@ export const Footer = ({
               <Link href="/">
                 <Img
                   src={`${baseUrl}${resources.linkdinLogo}`}
-                  className="bg-white h-6 w-6 rounded p-1"
+                  className="bg-white h-3 w-3 rounded p-1"
                 />
               </Link>
             </Column>
@@ -47,7 +47,7 @@ export const Footer = ({
               <Link href="/">
                 <Img
                   src={`${baseUrl}${resources.instagramLogo}`}
-                  className="bg-white h-6 w-6 rounded p-1"
+                  className="bg-white h-3 w-3 rounded p-1"
                 />
               </Link>
             </Column>
